@@ -11,5 +11,11 @@
     </parent>
     <artifactId>athena-thrift</artifactId>
 
-
+    <dependencies>
+        <!-- thrift -->
+        <dependency>
+            <groupId>org.apache.thrift</groupId>
+            <artifactId>libthrift</artifactId>
+        </dependency>
+    </dependencies>
 </project>
