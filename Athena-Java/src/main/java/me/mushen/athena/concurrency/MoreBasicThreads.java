@@ -1,13 +1,16 @@
 package me.mushen.athena.concurrency;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * @Desc
  * @Author Remilia
  * @Create 2016-08-13
  */
 public class MoreBasicThreads {
-    private static final Logger LOGGER = LoggerFactory.getLogger(MoreBasicThreads.class);
+    public static void main(String[] args){
+        for(int i=0; i<5; i++){
+            Thread thread = new Thread(new LiftOff());
+            thread.start();
+        }
+        System.out.println("Waiting for LiftOff");
+    }
 }

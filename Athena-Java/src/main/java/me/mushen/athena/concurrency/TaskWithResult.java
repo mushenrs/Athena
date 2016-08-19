@@ -1,13 +1,24 @@
 package me.mushen.athena.concurrency;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.concurrent.Callable;
 
 /**
  * @Desc
  * @Author Remilia
  * @Create 2016-08-13
  */
-public class TaskWithResult {
-    private static final Logger LOGGER = LoggerFactory.getLogger(TaskWithResult.class);
+public class TaskWithResult implements Callable<String>{
+    private int id;
+
+    public TaskWithResult(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String call() throws Exception {
+        if(id % 3 == 0){
+            Thread.sleep(10000L);
+        }
+        return "result of TaskWithResult: " + id;
+    }
 }

@@ -1,7 +1,7 @@
 package me.mushen.athena.collection;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * @Desc
@@ -9,5 +9,14 @@ import org.slf4j.LoggerFactory;
  * @Create 2016-08-14
  */
 public class SimpleCollection {
-    private static final Logger LOGGER = LoggerFactory.getLogger(SimpleCollection.class);
+    public static void main(String[] args){
+        Collection<Integer> collection = new ArrayList<>();
+        for(int i=0; i<10; i++){
+            collection.add(i);
+        }
+
+        for(Integer i : collection){
+            System.out.print(i + ",");
+        }
+    }
 }

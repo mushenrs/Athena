@@ -1,7 +1,7 @@
 package me.mushen.athena.concurrency;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @Desc
@@ -9,5 +9,11 @@ import org.slf4j.LoggerFactory;
  * @Create 2016-08-13
  */
 public class SingleThreadExecutor {
-    private static final Logger LOGGER = LoggerFactory.getLogger(SingleThreadExecutor.class);
+    public static void main(String[] args){
+        ExecutorService exec = Executors.newSingleThreadExecutor();
+        for(int i=0; i<5; i++){
+            exec.execute(new LiftOff());
+        }
+        exec.shutdown();
+    }
 }

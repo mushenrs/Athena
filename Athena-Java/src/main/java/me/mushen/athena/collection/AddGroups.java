@@ -1,7 +1,6 @@
 package me.mushen.athena.collection;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.*;
 
 /**
  * @Desc
@@ -9,5 +8,18 @@ import org.slf4j.LoggerFactory;
  * @Create 2016-08-14
  */
 public class AddGroups {
-    private static final Logger LOGGER = LoggerFactory.getLogger(AddGroups.class);
+    public static void main(String[] args){
+        Collection<Integer> collection = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+        Integer[] moreInts = {6, 7, 8, 9, 10};
+        collection.addAll(Arrays.asList(moreInts));
+
+        Collections.addAll(collection, 11, 12, 13, 14, 15);
+        Collections.addAll(collection, moreInts);
+
+        List<Integer> list = Arrays.asList(16, 17, 18, 19, 20);
+        list.set(1, 99);
+
+        System.out.println(collection);
+        System.out.println(list);
+    }
 }

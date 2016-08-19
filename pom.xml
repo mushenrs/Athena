@@ -12,6 +12,9 @@
         <module>Athena-Thrift</module>
         <module>Athena-Spring</module>
         <module>Athena-Java</module>
+        <module>Athena-Guava</module>
+        <module>Athena-SpringData</module>
+        <module>Athena-Jackson</module>
     </modules>
 
     <properties>
@@ -25,13 +28,16 @@
         <guava.version>19.0</guava.version>
         <spring.version>4.3.1.RELEASE</spring.version>
         <aspectj.version>1.8.9</aspectj.version>
+        <xmlbeans.version>2.6.0</xmlbeans.version>
+        <castor.version>1.4.1</castor.version>
+        <springdata.redis.version>1.7.2.RELEASE</springdata.redis.version>
         <mysql.version>5.1.38</mysql.version>
         <mybatis.version>3.4.1</mybatis.version>
         <mybatisspring.version>1.3.0</mybatisspring.version>
         <thrift.version>0.9.3</thrift.version>
         <jest.version>2.0.0</jest.version>
-        <jedis.version>2.8.0</jedis.version>
-        <jackson.version>2.6.3</jackson.version>
+        <jedis.version>2.8.1</jedis.version>
+        <jackson.version>2.8.1</jackson.version>
         <zookeeper.version>3.4.6</zookeeper.version>
         <finagle.thrift.artifactId>finagle-thrift_2.11</finagle.thrift.artifactId>
         <finagle.stats.artifactId>finagle-stats_2.11</finagle.stats.artifactId>
@@ -106,25 +112,73 @@
                 <version>${jsr305.version}</version>
             </dependency>
             <!-- spring -->
+            <!-- spring core -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!-- spring aop -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectj.version}</version>
+            </dependency>
+            <!-- spring oxm -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-oxm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.xmlbeans</groupId>
+                <artifactId>xmlbeans</artifactId>
+                <version>${xmlbeans.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.castor</groupId>
+                <artifactId>castor-xml</artifactId>
+                <version>${castor.version}</version>
+            </dependency>
+            <!-- spring test -->
+            <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!-- spring data -->
+            <!-- spring data redis -->
             <dependency>
-                <groupId>org.aspectj</groupId>
-                <artifactId>aspectjweaver</artifactId>
-                <version>${aspectj.version}</version>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>${springdata.redis.version}</version>
+            </dependency>
+            <!-- jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <!-- jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
             <!-- mysql -->
             <dependency>
