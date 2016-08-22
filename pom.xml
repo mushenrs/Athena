@@ -22,6 +22,7 @@
         <junit.version>4.12</junit.version>
         <systemrules.version>1.16.0</systemrules.version>
         <log4j.version>2.6.2</log4j.version>
+        <apache.commons.io.version>2.5</apache.commons.io.version>
         <jsr250.version>1.0</jsr250.version>
         <jsr305.version>3.0.0</jsr305.version>
         <jsr330.version>1.0</jsr330.version>
@@ -100,6 +101,13 @@
     <!-- 可选依赖 -->
     <dependencyManagement>
         <dependencies>
+            <!-- apache commons -->
+            <!-- commons io -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${apache.commons.io.version}</version>
+            </dependency>
             <!-- guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>

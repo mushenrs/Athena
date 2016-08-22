@@ -53,7 +53,7 @@ public class StreamParserGeneratorExample {
                     }
                 }
             }
-        }catch(IOException e){
+        }catch(Exception e){
             System.err.println("Stream Parser Err..." + e.getMessage());
             e.printStackTrace(System.err);
         }
@@ -78,7 +78,7 @@ public class StreamParserGeneratorExample {
             generator.writeEndObject();
 
             System.out.println("Create Success /tmp/albums4w.json");
-        }catch(IOException e){
+        }catch(Exception e){
             System.err.println("Stream Generator Err..." + e.getMessage());
             e.printStackTrace(System.err);
         }

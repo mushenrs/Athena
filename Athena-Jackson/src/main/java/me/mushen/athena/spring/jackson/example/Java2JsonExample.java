@@ -7,8 +7,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import me.mushen.athena.spring.jackson.pojo.Album;
-import me.mushen.athena.spring.jackson.pojo.Artist;
+import me.mushen.athena.spring.jackson.pojo.java2json.Album;
+import me.mushen.athena.spring.jackson.pojo.java2json.Artist;
 import me.mushen.athena.spring.jackson.util.ObjectMappers;
 
 import java.io.IOException;

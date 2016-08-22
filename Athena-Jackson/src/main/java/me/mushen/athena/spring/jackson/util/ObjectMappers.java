@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.cfg.MapperConfig;
 import com.fasterxml.jackson.databind.introspect.AnnotatedField;
 import com.fasterxml.jackson.databind.introspect.AnnotatedMethod;
-import me.mushen.athena.spring.jackson.pojo.Album;
+import me.mushen.athena.spring.jackson.pojo.java2json.Album;
 
 import java.text.SimpleDateFormat;
 
@@ -31,7 +31,7 @@ public class ObjectMappers {
         mapper.setPropertyNamingStrategy(new PropertyNamingStrategy(){
             @Override
             public String nameForField(MapperConfig<?> config, AnnotatedField field, String defaultName){
-                if(field.getFullName().equals("me.mushen.athena.jackson.java2json.Artist#name")){
+                if(field.getFullName().equals("me.mushen.athena.spring.jackson.pojo.java2json.Artist#name")){
                     return "Artist-Name";
                 }
                 return super.nameForField(config, field, defaultName);

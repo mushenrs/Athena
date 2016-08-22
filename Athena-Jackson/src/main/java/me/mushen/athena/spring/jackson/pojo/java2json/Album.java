@@ -1,6 +1,8 @@
-package me.mushen.athena.spring.jackson.pojo;
+package me.mushen.athena.spring.jackson.pojo.java2json;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Desc
