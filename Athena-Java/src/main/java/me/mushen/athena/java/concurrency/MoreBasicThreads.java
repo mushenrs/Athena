@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.concurrency;
+package me.mushen.athena.java.concurrency;
 
 /**
  * @Desc

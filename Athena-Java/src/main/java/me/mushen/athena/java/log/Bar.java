@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.log;
+package me.mushen.athena.java.log;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;

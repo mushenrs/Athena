@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.concurrency;
+package me.mushen.athena.java.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

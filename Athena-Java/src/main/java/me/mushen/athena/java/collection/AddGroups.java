@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.collection;
+package me.mushen.athena.java.collection;
 
 import java.util.*;
 
