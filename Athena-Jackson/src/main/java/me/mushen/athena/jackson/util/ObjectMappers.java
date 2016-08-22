@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.jackson.util;
+package me.mushen.athena.jackson.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.cfg.MapperConfig;
 import com.fasterxml.jackson.databind.introspect.AnnotatedField;
 import com.fasterxml.jackson.databind.introspect.AnnotatedMethod;
-import me.mushen.athena.spring.jackson.pojo.java2json.Album;
+import me.mushen.athena.jackson.pojo.java2json.Album;
 
 import java.text.SimpleDateFormat;
 

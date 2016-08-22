@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.jackson.example;
+package me.mushen.athena.jackson.example;
 
 import com.fasterxml.jackson.core.*;
 

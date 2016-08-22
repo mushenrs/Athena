@@ -1,11 +1,11 @@
-package me.mushen.athena.spring.jackson.example;
+package me.mushen.athena.jackson.example;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import me.mushen.athena.spring.jackson.pojo.json2java.Albums;
-import me.mushen.athena.spring.jackson.pojo.json2java.AlbumsFilter;
-import me.mushen.athena.spring.jackson.pojo.json2java.Dataset;
-import me.mushen.athena.spring.jackson.pojo.json2java.DatasetFilter;
+import me.mushen.athena.jackson.pojo.json2java.Albums;
+import me.mushen.athena.jackson.pojo.json2java.AlbumsFilter;
+import me.mushen.athena.jackson.pojo.json2java.Dataset;
+import me.mushen.athena.jackson.pojo.json2java.DatasetFilter;
 
 import java.io.InputStream;
 

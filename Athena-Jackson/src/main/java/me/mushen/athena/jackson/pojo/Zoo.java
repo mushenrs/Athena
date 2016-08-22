@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.jackson.pojo;
+package me.mushen.athena.jackson.pojo;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

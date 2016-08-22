@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.jackson.pojo.json2java;
+package me.mushen.athena.jackson.pojo.json2java;
 
 import java.util.HashMap;
 import java.util.Map;

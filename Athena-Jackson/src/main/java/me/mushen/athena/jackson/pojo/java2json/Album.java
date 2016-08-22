@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.jackson.pojo.java2json;
+package me.mushen.athena.jackson.pojo.java2json;
 
 import java.util.Collections;
 import java.util.List;

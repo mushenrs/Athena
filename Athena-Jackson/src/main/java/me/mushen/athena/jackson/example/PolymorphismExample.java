@@ -1,10 +1,10 @@
-package me.mushen.athena.spring.jackson.example;
+package me.mushen.athena.jackson.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import me.mushen.athena.spring.jackson.pojo.Animal;
-import me.mushen.athena.spring.jackson.pojo.Elephant;
-import me.mushen.athena.spring.jackson.pojo.Lion;
-import me.mushen.athena.spring.jackson.pojo.Zoo;
+import me.mushen.athena.jackson.pojo.Animal;
+import me.mushen.athena.jackson.pojo.Elephant;
+import me.mushen.athena.jackson.pojo.Lion;
+import me.mushen.athena.jackson.pojo.Zoo;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;

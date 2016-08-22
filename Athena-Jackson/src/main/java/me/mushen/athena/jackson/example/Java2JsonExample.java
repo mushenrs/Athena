@@ -1,4 +1,4 @@
-package me.mushen.athena.spring.jackson.example;
+package me.mushen.athena.jackson.example;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -7,9 +7,9 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import me.mushen.athena.spring.jackson.pojo.java2json.Album;
-import me.mushen.athena.spring.jackson.pojo.java2json.Artist;
-import me.mushen.athena.spring.jackson.util.ObjectMappers;
+import me.mushen.athena.jackson.util.ObjectMappers;
+import me.mushen.athena.jackson.pojo.java2json.Album;
+import me.mushen.athena.jackson.pojo.java2json.Artist;
 
 import java.io.IOException;
 import java.text.ParseException;
