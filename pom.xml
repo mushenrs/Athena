@@ -15,6 +15,7 @@
         <module>Athena-Guava</module>
         <module>Athena-SpringData</module>
         <module>Athena-Jackson</module>
+        <module>Athena-DesignPattern</module>
     </modules>
 
     <properties>
