@@ -12,7 +12,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.PROPERTY, property = "@class")
 @JsonSubTypes({ @JsonSubTypes.Type(value = Baguette.class, name = "baguette"),
                 @JsonSubTypes.Type(value = ToastBread.class, name = "toastbread")})
-public class Bread {
+public abstract class Bread {
     @JsonProperty("name")
     protected String name;
 
