@@ -16,6 +16,7 @@
         <module>Athena-SpringData</module>
         <module>Athena-Jackson</module>
         <module>Athena-DesignPattern</module>
+        <module>Athena-Netty</module>
     </modules>
 
     <properties>
@@ -40,6 +41,7 @@
         <jest.version>2.0.0</jest.version>
         <jedis.version>2.8.1</jedis.version>
         <jackson.version>2.8.1</jackson.version>
+        <netty.version>4.1.4.Final</netty.version>
         <zookeeper.version>3.4.6</zookeeper.version>
         <finagle.thrift.artifactId>finagle-thrift_2.11</finagle.thrift.artifactId>
         <finagle.stats.artifactId>finagle-stats_2.11</finagle.stats.artifactId>
@@ -212,6 +214,12 @@
                 <groupId>org.apache.thrift</groupId>
                 <artifactId>libthrift</artifactId>
                 <version>${thrift.version}</version>
+            </dependency>
+            <!-- netty -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
