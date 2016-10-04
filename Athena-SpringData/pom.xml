@@ -11,6 +11,16 @@
     <artifactId>athena-springdata</artifactId>
 
     <dependencies>
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <!-- spring test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
         <!-- spring data redis -->
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -27,6 +37,11 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <!-- spring data elasticsearc -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-elasticsearch</artifactId>
         </dependency>
     </dependencies>
 
