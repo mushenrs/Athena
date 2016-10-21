@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<context:component-scan base-package="me.mushen.athena.spring.bean" />-->
+    <bean id="sgtPeppers" class="me.mushen.athena.spring.bean.SgtPeppers" />
+
+    <!-- use constructor-arg -->
+    <!--<bean id="cdPlayer" class="me.mushen.athena.spring.bean.CDPlayer">
+        <constructor-arg name="cd" ref="sgtPeppers" />
+    </bean>-->
+    <!--<bean id="cdPlayer" class="me.mushen.athena.spring.bean.CDPlayer"
+          c:cd-ref="sgtPeppers" />-->
+    <bean id="cdPlayer" class="me.mushen.athena.spring.bean.CDPlayer"
+          c:_0-ref="sgtPeppers" />
+
+    <!-- use constructor-arg -->
+    <!--<bean id="blackDisc" class="me.mushen.athena.spring.bean.BlackDisc">
+        <constructor-arg name="title" value="Sgt. Pepper's Lonely Hearts Club Band" />
+        <constructor-arg name="artist" value="The Beatles, The Beatles" />
+    </bean>-->
+    <!--<bean id="blackDisc" class="me.mushen.athena.spring.bean.BlackDisc"
+          c:title="Sgt. Pepper's Lonely Hearts Club Band"
+          c:artist="The Beatles, The Beatles, The Beatles, The Beatles" />-->
+    <!--<bean id="blackDisc" class="me.mushen.athena.spring.bean.BlackDisc"-->
+          <!--c:_0="Sgt. Pepper's Lonely Hearts Club Band"-->
+          <!--c:_1="The Beatles, The Beatles, The Beatles, The Beatles" />-->
+    <!--<bean id="blackDisc" class="me.mushen.athena.spring.bean.BlackDisc">
+        <constructor-arg name="title" value="Sgt. Pepper's Lonely Hearts Club Band" />
+        <constructor-arg name="artist" value="The Beatles" />
+        <constructor-arg name="tracks">
+            <list>
+                <value>AA</value>
+                <value>BB</value>
+                <value>CC</value>
+                <value>DD</value>
+                <value>EE</value>
+            </list>
+        </constructor-arg>
+    </bean>-->
+    <bean id="blackDisc" class="me.mushen.athena.spring.bean.BlackDisc"
+          c:title="Sgt. Pepper's Lonely Hearts Club Band"
+          c:artist="The Beatles">
+        <constructor-arg name="tracks">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+                <value>DDD</value>
+                <value>EEE</value>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>

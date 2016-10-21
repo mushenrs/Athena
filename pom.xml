@@ -18,6 +18,7 @@
         <module>Athena-DesignPattern</module>
         <module>Athena-Netty</module>
         <module>Athena-Mybatis</module>
+        <module>Athena-SpringMVC</module>
     </modules>
 
     <properties>
@@ -51,6 +52,11 @@
         <finagle.version>6.35.0</finagle.version>
         <twitter.server.artifactId>twitter-server_2.11</twitter.server.artifactId>
         <twitter.server.version>1.20.0</twitter.server.version>
+        <servletapi.version>3.1.0</servletapi.version>
+        <jspapi.version>2.3.1</jspapi.version>
+        <elapi.version>3.0.0</elapi.version>
+        <jstlapi.version>1.2.1</jstlapi.version>
+        <glassfishjstl.version>1.2.2</glassfishjstl.version>
         <!-- plugin -->
         <compiler.plugin.version>3.5.1</compiler.plugin.version>
         <resources.plugin.version>3.0.1</resources.plugin.version>
@@ -159,6 +165,17 @@
                 <groupId>org.codehaus.castor</groupId>
                 <artifactId>castor-xml</artifactId>
                 <version>${castor.version}</version>
+            </dependency>
+            <!-- spring mvc -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
             </dependency>
             <!-- spring test -->
             <dependency>
