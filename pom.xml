@@ -37,6 +37,8 @@
         <castor.version>1.4.1</castor.version>
         <springdata.redis.version>1.7.2.RELEASE</springdata.redis.version>
         <springdata.es.version>1.4.0.M1</springdata.es.version>
+        <elasticsearch.version>1.7.3</elasticsearch.version>
+        <carrotsearch.hppc.version>0.7.1</carrotsearch.hppc.version>
         <mysql.version>5.1.39</mysql.version>
         <HikariCP.version>2.4.7</HikariCP.version>
         <mybatis.version>3.4.1</mybatis.version>
@@ -258,6 +260,17 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
                 <version>${netty.version}</version>
+            </dependency>
+            <!-- elasticsearch -->
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.carrotsearch</groupId>
+                <artifactId>hppc</artifactId>
+                <version>${carrotsearch.hppc.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
